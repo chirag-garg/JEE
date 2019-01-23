@@ -1,0 +1,28 @@
+import java.util.Arrays;
+import java.util.Scanner;
+class Main{
+    public static void main(String args[])
+    {int i,f=0;
+    Scanner input=new Scanner(System.in);
+    String str1=input.nextLine();
+    String str2=input.nextLine();
+    char s1[]=str1.toCharArray();
+    Arrays.sort(s1);
+    char s2[]=str2.toCharArray();
+    Arrays.sort(s2);
+    String stri1=new String(s1);
+    String stri2=new String(s2);
+    if(stri1.length()!=stri2.length())
+    System.out.println("Not");
+    else
+    {for(i=0;i<stri1.length();i++)
+      { if(stri1.charAt(i)!=stri2.charAt(i))
+           {f=1;break;}
+      }
+      if(f==1)
+      System.out.println("Not");
+      else
+      System.out.println("Yes");
+    }
+}
+}
