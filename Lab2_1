@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class PersonDetails {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String fname;
+		String lname;
+		String gender;
+		int age;
+		int weight;
+		Scanner in= new Scanner(System.in);
+		System.out.println("Enter first name");
+		fname=in.nextLine();
+		System.out.println("enter last name");
+		lname=in.nextLine();
+		System.out.println("Enter your gender");
+		gender=in.nextLine();
+		System.out.println("Enter your age");;
+		age=in.nextInt();
+		System.out.println("enter your weight");
+		weight=in.nextInt();
+		System.out.println("The person name is"+fname+" "+lname+"And he is "+gender+"and his age is"+age+"and his weight is"+weight);
+	}
+
+}
+
+OUTPUT
+
+Enter your gender
+male
+Enter your age
+23
+enter your weight
+67
+The person name ischirag gargAnd he is maleand his age is23and his weight is67
